@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" />
+
+    <script src="javascripts/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/pdfobject.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,12 +19,24 @@
   </head>
 
   <body>
+    <div class="modal fade" id="resume" tabindex="-1" role="dialog" 
+      aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div id="pdfRenderer" style="height:600px; width:900px">
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <div class="row">
       <div class="col-xs-4 col-xs-offset-1">
         <header>
           <h1>Wenbo Chang</h1>
           <h4 class="col-xs-offset-1">
             enquea@gmail.com
+              <button class="btn btn-primary btn-sm" 
+                data-toggle="modal" data-target="#resume">
+                View Resume
+              </button>
           </h4>
           <h2 class="col-xs-offset-1">
             <img class="img-rounded" src="http://i.imgur.com/5d4dzSK.jpg?1" />
@@ -47,8 +63,24 @@
           Headbook, a minimalist social networking site
         </a>
       </h4>
+      <h4 class="col-xs-4">
+        <a href="https://github.com/enquea/active_record">
+          ActiveRecordLite, custom classes for associations
+        </a>
+      </h4>
     </div> <!-- row 1 -->
 
+    <script language="javascript" type="text/javascript">
+      $(document).ready(function() {
+        var pdf = new PDFObject({
+          url: "resume.pdf",
+          id: "pdfRendered",
+          pdfOpenParams: {
+            view: "FitH"
+          }
+        }).embed("pdfRenderer");
+      });                  
+    </script>
   </body>
 </html>
 
