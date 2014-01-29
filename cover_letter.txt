@@ -1,0 +1,19 @@
+Greetings,
+
+I'm writing to apply to the Ruby on Rails Engineer position at Zendesk. I am a web developer with experience in Rails and JavaScript.
+
+I'm currently looking for opportunities to join a team that's building an awesome product
+and solving hard problems. Zendesk's data driven approach sounds like a great combination of the two.
+I would love to connect to talk more about your product and the engineering profile you're looking for.
+
+My resume is attached for your convenience. You can also see my sample projects here:
+
+http://enquea.github.io
+
+
+I look forward to speaking with you.
+
+Best,
+
+Wenbo Chang
+
