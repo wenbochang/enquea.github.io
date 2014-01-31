@@ -1,0 +1,17 @@
+.thumb {
+  float: left;
+  display: inline;
+}
+
+.thumb.image-container {
+  width: 30%;
+}
+
+.thumb-image{
+  width: 100px;
+  height: 100px;
+}
+
+.thumb-text {
+  width: 69%;
+}

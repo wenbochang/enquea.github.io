@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" />
 
     <script src="javascripts/jquery-1.11.0.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
@@ -58,20 +59,39 @@
         </header>
       </h3> <!-- right col -->
 
-      <h4 class="col-xs-4">
-        <a href="http://head-book.herokuapp.com">
-          Headbook, a minimalist social networking site
-        </a>
+      <h4 class="col-xs-4"> <!-- Headbook -->
+        <thumbnail class="thumb image-container">
+          <a href="http://head-book.herokuapp.com">
+            <img class="thumb-image" src="images/headbook.jpg" />
+          </a>
+        </thumbnail>
+        <div class="thumb thumb-text">
+          <b>Headbook (Ruby, Javascript)</b>, a fullstack clone of Facebook with a touch of Google+.
+          Built with a Backbone.js front end and Rails back end
+        </div>
       </h4>
-      <h4 class="col-xs-4">
-        <a href="http://enquea.github.io/snakes">
-          Snakes, a simple javascript game
-        </a>
+
+      <h4 class="col-xs-4"> <!-- Snakes -->
+        <thumbnail class="thumb image-container">
+          <a href="http://enquea.github.io/snakes">
+            <img class="thumb-image" src="images/snakes.jpg" />
+          </a>
+        </thumbnail>
+        <div class="thumb thumb-text">
+          <b>Snakes (Javascript)</b>, a simple game that uses Keymaster to allow "WASD" movement
+        </div>
       </h4>
-      <h4 class="col-xs-4">
-        <a href="https://github.com/enquea/active_record">
-          ActiveRecordLite, custom classes for associations
-        </a>
+
+      <h4 class="col-xs-4 col-xs-offset-5"> <!-- MegaRecord -->
+        <thumbnail class="thumb image-container">
+          <a href="https://github.com/enquea/MegaRecord/tree/master/active_record_lite-skeleton/lib/active_record_lite">
+            <img class="thumb-image" src="images/megarecord.jpg" />
+          </a>
+        </thumbnail>
+        <div class="thumb thumb-text">
+          <b>MegaRecord (Ruby)</b>, a clone of ActiveRecord. Its popular ORM features such as 
+          associations and mass-assignment are implemented with Ruby meta-programming.
+        </div>
       </h4>
     </div> <!-- row 1 -->
 
